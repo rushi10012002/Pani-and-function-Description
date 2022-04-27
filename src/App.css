@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+label{
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type='checkbox']:checked:after {
+  width: 19px;
+  height: 19px;
+  border-radius: 15px;
+  top: -3px;
+  left: -2px;
+  position: relative;
+  color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid orange;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type='checkbox']:checked:focus {
+ outline: unset;
+ box-shadow: unset;
 }
+.form-control {
 
-.App-link {
-  color: #61dafb;
+ border: 1px solid #0c0c0c;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:focus {
+ outline: unset;
+ box-shadow: unset;
+ border: 1px solid #ffa500;
+ box-shadow: 0 0 0 0.25rem #b09e7d;
+}
+.textColor{
+  color: grey;
 }
