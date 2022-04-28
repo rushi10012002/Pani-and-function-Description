@@ -40,7 +40,15 @@ function TableInfo() {
             <td>{item.physicalTrauma}</td>
             <td>{item.mentalTrauma}</td>
             <td>{item.experienceProblem}</td>
-            <td>{"item."}</td>
+            <td>
+              <ul>
+               {item.NotRelevant &&  <li> "NotRelevant"</li>}
+                 {item.whenlyingdown && <li>  "whenlyingdown"</li>}
+                {item.whensitting && <li>  "whensitting"</li>}
+                 {item.Understanding && <li>  "Understanding"</li>}
+                {item.Inwalking && <li> "Inwalking"</li>}
+              </ul>
+            </td>
             <td>{item.rating}</td>
           </tr>
            )
